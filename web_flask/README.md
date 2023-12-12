@@ -1,0 +1,1 @@
+This project is about creating a web app using flask as a web framework. 
