@@ -35,7 +35,7 @@ def print_text(text):
     return(f"C {escape(replaced_text)}")
 
 
-@app.route("/python/", defaults= {"text": "is cool"}, strict_slashes=False)
+@app.route("/python/", defaults={"text": "is cool"}, strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def print_text_python(text='is cool'):
     """
