@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route("/", strict_slashes=False)
 def hello_world():
     """
-    a funcion añadimos metodo route de objeto app clase Flask con argumentos para usarlo
+    funcion usa metodo route de app
     """
     return("Hello HBNB!")
 
