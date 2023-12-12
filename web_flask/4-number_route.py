@@ -6,6 +6,8 @@ module creates an object of class Flask and returns str
 
 from flask import Flask
 from markupsafe import escape
+from flask import abort
+import math
 
 app = Flask(__name__)
 
@@ -44,12 +46,13 @@ def print_text_python(text='is cool'):
     replaced_text = text.replace("_", " ")
     return(f"Python {escape(replaced_text)}")
 
-@app.route("/number/<n>", strict_slashes=False)
+
+@app.route("/number/<int:n>", strict_slashes=False)
 def print_number(n):
     """
     funcion usa metodo route de app
-    """
-    return(f"{escape(int(n))} is a number")
+    """  
+    return(f"{escape(n)} is a number")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
