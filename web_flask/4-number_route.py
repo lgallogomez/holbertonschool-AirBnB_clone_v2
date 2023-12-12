@@ -51,7 +51,7 @@ def print_text_python(text='is cool'):
 def print_number(n):
     """
     funcion usa metodo route de app
-    """  
+    """
     return(f"{escape(n)} is a number")
 
 if __name__ == '__main__':
