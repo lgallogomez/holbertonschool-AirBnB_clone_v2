@@ -30,7 +30,8 @@ def print_text(text):
     """
     funcion usa metodo route de app
     """
-    return(f"C {escape(text)}")
+    replaced_text = text.replace("_", " ")
+    return(f"C {escape(replaced_text)}")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
