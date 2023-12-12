@@ -25,7 +25,7 @@ def hbnb():
     """
     return("HBNB")
 
-@app.route("/<text>", strict_slashes=False)
+@app.route("/c/<text>", strict_slashes=False)
 def print_text(text):
     """
     funcion usa metodo route de app
