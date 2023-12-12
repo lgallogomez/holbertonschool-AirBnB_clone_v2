@@ -9,10 +9,10 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/", strict_slashes=False) 
+@app.route("/", strict_slashes=False)
 def hello_world():
     """
-    A la funcion hello_world le añadimos el metodo route del objeto app de clase Flask con argumentos especifico para usarlo
+    a funcion añadimos metodo route de objeto app clase Flask con argumentos para usarlo
     """
     return("Hello HBNB!")
 
