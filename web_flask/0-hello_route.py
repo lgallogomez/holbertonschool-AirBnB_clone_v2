@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+'''
+module creates an object of class Flask and returns str
+'''
 from flask import Flask
 
 app = Flask(__name__)
